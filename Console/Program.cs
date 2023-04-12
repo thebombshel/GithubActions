@@ -85,7 +85,7 @@ namespace GithubActionsLab
         public static double Power(string x, string y)
         {
             double j = double.Parse(x);
-            for (int i = 1; i <= int.parse(y); i++) {
+            for (int i = 1; i <= y; i++) {
                 j*= double.Parse(x);
             }
             return j;
