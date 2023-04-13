@@ -40,7 +40,7 @@ namespace GithubActionsLab
         }
         
         [Test]
-        public void Add_Invalid()
+        public void Subtract_Invalid_Waller()
         {
             Assert.Throws<FormatException>(() => Program.Subtract("1", "a"));
             Assert.Throws<FormatException>(() => Program.Subtract("a", "1"));
