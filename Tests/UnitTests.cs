@@ -31,5 +31,12 @@ namespace GithubActionsLab
         }
 
         // Implement 3 tests per operation, following a similar pattern as above
+        [Test]
+        public void Subtract_Valid_Waller()
+        {
+            Assert.AreEqual(3, Program.Subtract("5", "2"));
+            Assert.AreEqual(5, Program.Subtract("7", "2"));
+            Assert.AreEqual(12, Program.Subtract("19", "7"));
+        }
     }
 }
