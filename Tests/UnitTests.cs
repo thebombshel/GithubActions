@@ -106,7 +106,7 @@ namespace GithubActionsLab
         [Test]
         public void Power_Valid_Waller()
         {
-            Assert.AreEqual(4, Program.Power("2", "2"));
+            Assert.AreEqual(16, Program.Power("2", "4"));
             Assert.AreEqual(9, Program.Power("3", "2"));
             Assert.AreEqual(25, Program.Power("5", "2"));
         }
