@@ -38,5 +38,13 @@ namespace GithubActionsLab
             Assert.AreEqual(5, Program.Subtract("7", "2"));
             Assert.AreEqual(12, Program.Subtract("19", "7"));
         }
+        
+        [Test]
+        public void Add_Invalid()
+        {
+            Assert.Throws<FormatException>(() => Program.Subtract("1", "a"));
+            Assert.Throws<FormatException>(() => Program.Subtract("a", "1"));
+            Assert.Throws<FormatException>(() => Program.Subtract("a", "a"));
+        }
     }
 }
